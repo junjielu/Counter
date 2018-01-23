@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbw-cA-BZW">
+                                <rect key="frame" x="182" y="333" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zm2-rZ-Dsv">
+                                <rect key="frame" x="252.5" y="328.5" width="30" height="30"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N05-Nk-bp4">
+                                <rect key="frame" x="92" y="328.5" width="30" height="30"/>
+                                <state key="normal" title="-"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kbw-cA-BZW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="4NQ-y6-0eK"/>
+                            <constraint firstItem="Zm2-rZ-Dsv" firstAttribute="centerY" secondItem="kbw-cA-BZW" secondAttribute="centerY" id="Cyd-ue-U2t"/>
+                            <constraint firstItem="kbw-cA-BZW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mns-CC-HCi"/>
+                            <constraint firstItem="kbw-cA-BZW" firstAttribute="leading" secondItem="N05-Nk-bp4" secondAttribute="trailing" constant="60" id="b6J-hd-8DT"/>
+                            <constraint firstItem="N05-Nk-bp4" firstAttribute="centerY" secondItem="kbw-cA-BZW" secondAttribute="centerY" id="vQZ-Ab-k1s"/>
+                            <constraint firstItem="Zm2-rZ-Dsv" firstAttribute="leading" secondItem="kbw-cA-BZW" secondAttribute="trailing" constant="60" id="wWu-tw-8co"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="kbw-cA-BZW" id="ohs-vf-C8t"/>
+                        <outlet property="decreaseButton" destination="N05-Nk-bp4" id="z7g-RU-z4G"/>
+                        <outlet property="increaseButton" destination="Zm2-rZ-Dsv" id="Jg7-lc-kZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
